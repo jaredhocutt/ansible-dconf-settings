@@ -18,7 +18,7 @@ None
 
 ## Example Playbook
 
-```
+```yaml
 - hosts: localhost
   vars:
     dconf_settings:
