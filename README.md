@@ -10,7 +10,7 @@ None
 
 | Variable         | Required           | Default | Description                                                                                                            |
 | ---------------- | ------------------ | ------- | ---------------------------------------------------------------------------------------------------------------------- |
-| `dconf-settings` | :heavy_check_mark: | `[]`    | The list of dconf settings to set. Each item in the list should have a `key` and `value` (see example playbook below). |
+| `dconf_settings` | :heavy_check_mark: | `[]`    | The list of dconf settings to set. Each item in the list should have a `key` and `value` (see example playbook below). |
 
 ## Dependencies
 
