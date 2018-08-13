@@ -1,9 +1,8 @@
 ---
 
 - name: Install required packages
-  dnf:
-    name: dconf-editor
-    state: present
+  action: >
+    {{ ansible_pkg_mgr }} name=dconf-editor state=present
   become: yes
 
 - include_tasks: set_value.yml
