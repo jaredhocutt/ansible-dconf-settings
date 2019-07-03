@@ -1,4 +1,5 @@
 ---
+# tasks file for dconf-settings
 
 - name: Install required packages
   dnf:
@@ -8,6 +9,6 @@
 
 - include_tasks: set_value.yml
   vars:
-    dconf_key: '{{ item.key }}'
-    dconf_value: '{{ item.value }}'
-  with_items: '{{ dconf_settings }}'
+    dconf_key: "{{ item.key }}"
+    dconf_value: "{{ item.value }}"
+  with_items: "{{ dconf_settings }}"

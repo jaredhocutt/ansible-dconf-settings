@@ -2,9 +2,9 @@
 
 - name: Read {{ item.key }}
   command: dconf read {{ item.key }}
-  register: dconf_current_value
+  register: r_dconf_current_value
   changed_when: no
 
 - name: Set {{ item.key }}
   command: dconf write {{ item.key }} "{{ item.value }}"
-  when: dconf_current_value.stdout != item.value
+  when: r_dconf_current_value.stdout != item.value
