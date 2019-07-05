@@ -11,4 +11,4 @@
   vars:
     dconf_key: "{{ item.key }}"
     dconf_value: "{{ item.value }}"
-  with_items: "{{ dconf_settings }}"
+  loop: "{{ dconf_settings }}"
